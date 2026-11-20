@@ -1,0 +1,26 @@
+name: Feature suggestion
+description: Suggest an improvement or new feature for AIO PVP.
+title: "[Suggestion]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Search existing suggestions first. Keep feedback constructive and do not include personal or account information."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe your use case, especially enemy-player visibility or world PvP when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Suggested behavior
+      description: Explain what the option should do and how you would use it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or examples
+      description: Optional mockups or links are welcome. Requests must respect WoW Forever client restrictions.

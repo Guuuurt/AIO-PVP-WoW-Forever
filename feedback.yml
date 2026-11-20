@@ -1,0 +1,19 @@
+name: General feedback
+description: Share feedback, usability concerns, or questions about AIO PVP.
+title: "[Feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for helping improve AIO PVP. Use the bug report form for reproducible problems or the feature form for specific suggestions. Everything posted here is public."
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: What works well, what is confusing, or what could be improved? Do not include personal or account information.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AIO PVP version and affected feature
+      description: Optional, but helpful when discussing a specific part of the addon.

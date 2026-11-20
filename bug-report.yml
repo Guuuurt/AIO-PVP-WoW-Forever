@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a problem with AIO PVP on WoW Forever.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Search existing issues first. Reports are public: remove personal/account information, chat, and sensitive data from text and screenshots."
+  - type: input
+    id: addon-version
+    attributes:
+      label: AIO PVP version
+      placeholder: "Example: 0.1.163"
+    validations:
+      required: true
+  - type: input
+    id: client-version
+    attributes:
+      label: WoW Forever client version and build
+      description: "Use /dump GetBuildInfo() in game. Do not include account details."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the affected feature and relevant settings.
+      placeholder: "1. Open...\n2. Enable...\n3. Observe..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Combat context and other addons
+      description: "Players or NPCs? In combat or out of combat? Duel, battleground, or world PvP? List addons affecting the same UI, especially Plater, BetterBlizzFrames, MSBT, or another WeakAuras build."
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Lua error, screenshots, or additional details
+      description: Paste the relevant error or attach a redacted screenshot. Do not upload entire WTF folders or unreviewed SavedVariables files.
